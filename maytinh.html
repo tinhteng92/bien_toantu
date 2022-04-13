@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<input type="text" id="num1" value="">
+<input type="text" id="num2" value=""><br><br>
+<button type="button" onclick="add()">Addition(+)</button>
+<button type="button" onclick="sub()">Subtraction(-)</button>
+<button type="button" onclick="mu()">Multiplication(X)</button>
+<button type="button" onclick="di()">Multiplication(X)</button>
+</form>
+</body>
+</html>
+<script>
+    function add(){
+        let nu1 = document.getElementById("num1").value
+        let nu2 = document.getElementById("num2").value
+
+        let a = '1'
+
+        a = parseInt(a)
+
+        alert(nu1 + nu2);
+    }
+    function sub(){
+        alert(document.getElementById("num1").value - document.getElementById("num2").value);
+    }
+    function mu(){
+        alert(document.getElementById("num1").value * document.getElementById("num2").value);
+    }
+    function di(){
+        alert(document.getElementById("num1").value / document.getElementById("num2").value);
+    }
+</script>

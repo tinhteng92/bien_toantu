@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 500px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <form>
+    <tr>
+        <th> Amount</th>
+        <th> From Currency</th>
+        <th> To Currency</th>
+    </tr>
+    <tr>
+        <td><input id="amount" type="text"  value=""></td>
+        <td>
+            <select id="fCurrency" >
+                <option name="VND" value="23000" selected>VND</option>
+                <option name="USD" value="1">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="tCurrency">
+                <option name="USD" value="1" selected>USD</option>
+                <option name="VND" value="23000">VND</option>
+            </select>
+        </td>
+    </tr>
+    </form>
+    <tr>
+        <td><button type="" onclick="result()">Convert</button> </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    function result(){
+        alert(document.getElementById("amount").value * document.getElementById("fCurrency").value *document.getElementById("tCurrency").value);
+    }
+</script>
